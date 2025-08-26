@@ -160,16 +160,22 @@ section h2 {
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 .project-card a:hover,
 .blog-card a:hover {
   background: #601e8d;       /* hover color matching your theme */
-  transform: translateY(-5px);
+  transform: translateY(-8px);
   color: white;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.project-card img:hover,
+.blog-card img:hover {
+  transform: scale(1.01);
+ box-shadow: 0 8px 20px rgba(0,0,0,0.3); 
 }
 
 .project-card h3 {
@@ -234,7 +240,7 @@ section h2 {
 }
 
 .blog-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 

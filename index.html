@@ -17,6 +17,8 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#blogs">Blogs</a></li>
+
     </ul>
   </nav>
 
@@ -87,16 +89,19 @@ like <b>threat hunting, anomaly detection</b>.
       </div>
       <div class="project-card">
         <h3>HTTP Server</h3>
+        <img src="img/http.jpg" alt="Custom Shell" class="project-img">
         <p>A simple HTTP server built in C to handle basic GET and POST requests.</p>
         <a href="https://github.com/Nabin0727/webserver" target="_blank">View Code</a>
       </div>
       <div class="project-card">
         <h3>File Integrity Monitor</h3>
+        <img src="img/file.jpg" alt="Custom Shell" class="project-img">
         <p>A tool built in C to detect file system changes for security monitoring.</p>
         <a href="https://github.com/Nabin0727/Final-FIM-Project" target="_blank">View Code</a>
       </div>
       <div class="project-card">
         <h3>Fake News Detection using Naive Bayes</h3>
+        <img src="img/fake.jpg" alt="Custom Shell" class="project-img">
         <p>A tool to detect fake news based on Naive Bayes Classifier.</p>
         <a href="https://github.com/Nabin0727/fake-news-naive_bayes_algorithm" target="_blank">View Code</a>
       </div>
@@ -107,7 +112,9 @@ like <b>threat hunting, anomaly detection</b>.
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills-list">
-      <div class="skill-badge">C Programming</div>
+      <div class="skill-badge">C/C++Programming</div>
+      <div class="skill-badge">Python/Bash</div>
+      <div class="skill-badge">ELK Stack/Wazuh</div>
       <div class="skill-badge">Linux Systems</div>
       <div class="skill-badge">Cybersecurity</div>
       <div class="skill-badge">Machine Learning</div>
@@ -120,16 +127,16 @@ like <b>threat hunting, anomaly detection</b>.
   <h2>My Blogs</h2>
   <div class="blogs-container">
     <div class="blog-card">
-      <h3>Understanding Linux Pointers</h3>
-      <img src="images/linux_blog.png" alt="Linux Blog" class="blog-img">
-      <p>An in-depth explanation of pointers in Linux system programming.</p>
-      <a href="https://medium.com/@nabin.lopchan/linux-pointers" target="_blank">Read Blog</a>
+      <h3>HTTP Server in C</h3>
+      <img src="img/http.jpg" alt="Linux Blog" class="blog-img">
+      <p>An in-depth guide for building HTTP server in C.</p>
+      <a href="https://medium.com/@lopchannabeen138/simple-http-server-in-c-an-in-depth-guide-2f159a11cda9" target="_blank">Read Blog</a>
     </div>
     <div class="blog-card">
-      <h3>Cybersecurity Tips for Beginners</h3>
-      <img src="images/cyber_blog.png" alt="Cybersecurity Blog" class="blog-img">
-      <p>Practical tips and tools for beginners to start in cybersecurity.</p>
-      <a href="https://medium.com/@nabin.lopchan/cybersecurity-tips" target="_blank">Read Blog</a>
+      <h3>Building Your Own Shell in C</h3>
+      <img src="img/shell.jpg" alt="Cybersecurity Blog" class="blog-img">
+      <p>Guide for building a custom shell in C.</p>
+      <a href="https://medium.com/@lopchannabeen138/build-your-own-shell-in-c-a-beginners-guide-bb8ca3111217" target="_blank">Read Blog</a>
     </div>
     <!-- Add more blog cards as needed -->
   </div>
@@ -143,19 +150,38 @@ like <b>threat hunting, anomaly detection</b>.
   </section>
 
   <footer>
-    <p>&copy; 2025 Nabin Lopchan. All Rights Reserved.</p>
+    <p>&copy; 2025 Nabin Lopchan.</p>
   </footer>
 
   <!-- Typed.js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script type="text/javascript">
+<script type="text/javascript">
     var typed = new Typed('.typing', {
       strings: ["Solution Engineer", "Programmer", "Fast Learner"],
       typeSpeed: 80,
       backSpeed: 40,
       loop: true
     });
-  </script>
+</script>
+<!-- Smooth Scrolling-->
+<script>
+  const navLinks = document.querySelectorAll('nav ul li a');
+  const navHeight = document.querySelector('nav').offsetHeight;
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
+      const targetPosition = targetSection.offsetTop - navHeight - 20; // 20px extra space
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
 
