@@ -163,6 +163,14 @@ section h2 {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
+.project-card a:hover,
+.blog-card a:hover {
+  background: #601e8d;       /* hover color matching your theme */
+  transform: translateY(-5px);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
 
 .project-card h3 {
   margin-bottom: 10px;
@@ -177,6 +185,14 @@ section h2 {
 .project-card a {
   color: #9f7aea;
   font-weight: 500;
+}
+
+.project-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 /* Skills Section */
@@ -198,6 +214,51 @@ section h2 {
 
 .skill-badge:hover {
   background: #7c5dc7;
+}
+
+/* Blog Section */
+.blogs-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.blog-card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.blog-card h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.blog-card p {
+  margin-bottom: 15px;
+  color: #dcd6f7;
+}
+
+.blog-card a {
+  color: #9f7aea;
+  font-weight: 500;
+}
+
+.blog-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 /* GitHub Graph */
