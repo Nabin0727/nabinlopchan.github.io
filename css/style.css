@@ -138,11 +138,11 @@ section h2 {
 }
 .experience-item span a {
   font-size: 0.9rem;
-  color: #c9b6f3;
+  color: #c9b6f3 !important;
 }
 .experience-item span a:hover {
   font-size: 0.9rem;
-  color: #a464d2;
+  color: #a464d2 !important;
 }
 
 .experience-item p {
