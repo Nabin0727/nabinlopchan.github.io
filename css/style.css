@@ -136,6 +136,14 @@ section h2 {
   display: block;
   margin-bottom: 10px;
 }
+.experience-item span a {
+  font-size: 0.9rem;
+  color: #c9b6f3;
+}
+.experience-item span a:hover {
+  font-size: 0.9rem;
+  color: #a464d2;
+}
 
 .experience-item p {
   color: #dcd6f7;
