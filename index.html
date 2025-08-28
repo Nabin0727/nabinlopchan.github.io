@@ -32,6 +32,9 @@
     </div>
   </section>
 
+  <!-- Up arrow button-->
+  <button id="goTopBtn" title="Go to top">⮝</button>
+
   <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
@@ -181,7 +184,23 @@ like <b>threat hunting, anomaly detection</b>.
     });
   });
 </script>
+<script>
+  const goTopBtn = document.getElementById("goTopBtn");
 
+  // Show button after scrolling 150px
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 150) {
+      goTopBtn.classList.add("show");
+    } else {
+      goTopBtn.classList.remove("show");
+    }
+  });
+
+  // Scroll smoothly to top when clicked
+  goTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
 </body>
 </html>
 
