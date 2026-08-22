@@ -1,264 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nabin Lopchan | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nabin Lopchan — PhD Student</title>
+
+    <meta
+        name="description"
+        content="Nabin Lopchan — PhD Student in Computer Science at Augusta University."
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 </head>
+
 <body>
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">Nabin Lopchan</div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#blogs">Blogs</a></li>
 
-    </ul>
-  </nav>
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-  <!-- Home Section -->
-  <section id="home">
-    <div class="home-content">
-      <div class="text">
-	      <h3><span>It is not the strongest who survive, nor the most intelligent, but those most responsive to change.</span></h3><i> ~ Charles Darwin </i>
-        <p><span class="typing"></span></p>
-      </div>
+<header class="navbar">
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            Nabin
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#experience">Experience</a>
+            <a href="#news">News</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button
+                class="theme-button"
+                id="themeToggle"
+                aria-label="Toggle dark mode"
+            >
+                <i class="fa-regular fa-sun"></i>
+            </button>
+
+            <button
+                class="menu-button"
+                id="menuToggle"
+                aria-label="Open navigation"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
     </div>
-  </section>
+</header>
 
-  <!-- Up arrow button-->
-  <button id="goTopBtn" title="Go to top">⮝</button>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <div class="about-content">
-      <p>I am a curious <b>Solutions Engineer</b> with a strong background in <i>system programming, Linux, cybersecurity and 
-        Machine Learning</i>, passionate about building tools and solutions that make systems reliable and secure. 
-        Beyond technology, I enjoy exploring <i> philosophy, literature, and travel</i>, drawing inspiration from new ideas 
-        and experiences. I approach every challenge with curiosity, creativity, and a drive to learn and make an impact.</p>
-    </div>
-  </section>
+<main>
 
-  <!-- Experience Section -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="experience-list">
-      <div class="experience-item">
-        <div class="experience-item">
-        <h3>Solutioins Engineer</h3>
-        <span><a href="https://www.logpoint.com" target="_blank">guardsix Inc.</a> | Mar 2026 - Present</span>
-        <p>
-          ⚡ Led the onboarding of <b>Qvantel</b> platform, integrating and managing an inventory of over <b>20,000+</b> assets/log sources into the security monitoring ecosystem.  
-          <br>⚡ Designed and developed custom detection use cases tailored to organizational needs, improving visibility and threat detection capabilities.
-          <br>⚡ Actively worked and led the project to build a fully operational SOC for guardsix inc. including:  
-              <div style="margin-left: 50px; margin-top: -10px;">
-              <br>o Onboarding critical log sources across infrastructure and applications 
-              <br>o Developing and tuning detection logic and correlation rules  
-              <br>o Creating SOC playbooks and operational procedures  
-              <br>o Designing and documenting incident response plans</div>
-          <br>⚡ Worked on improving detection engineering practices, ensuring better alert quality and reduced false positives. 
-  </p>
-      </div>
-        <h3>Associate Solutioins Engineer</h3>
-        <span><a href="https://www.logpoint.com" target="_blank">Logpoint Inc.</a> | Mar 2025 - Mar 2026</span>
-        <p>
-          ⚡ Worked on Linux system tools, optimized C programs, and automated debugging workflows for faster development.
-          <br>⚡ Resolved critical <b>Linux and Windows </b>system issues related to <b>CPU</b>, <b>memory</b>, and <b>network</b>, enhancing reliability.  
-          <br>⚡ Onboarded new customer, worked on use-cases, maintained <b>DEMO</b> systems.
-          <br>⚡ Designed and implemented different use cases SOAR playbooks to automate response workflows.
-          <br>⚡ Worked on fields of Cryptography, Authentication/Authorization, <b>REST API, Cloud, Nxlog, and Wazuh</b>.
-          <br>⚡ Worked on different tool and technology <b>integration</b> with SIEM.
-  </p>
+<!-- =========================
+     HOME
+========================= -->
 
-      </div>
-      <div class="experience-item">
-        <h3>Associate SIEM Engineer</h3>
-        <span><a href="https://www.vairavtech.com" target="_blank">Vairav Tech</a> | Feb 2024 - Feb 2025</span>
-        <p>
-        ⚡ Deployed and maintained SIEM based on <b>ELK, Wazuh.</b><br>
-	      ⚡ Developed and <b>fine-tuned SIEM correlation rules</b>, dashboards, and reports to enhance threat detection. 
-	      <br>⚡ Conducted <b>performance tuning</b> and <b>troubleshooting</b> of SIEM systems.
-	      <br>⚡ Collaborated with Tier-2 SOC analysts and customer to support use-cases like <b>threat hunting, anomaly detection</b>.
-	      <br>⚡ Engaged in security research to improve detection techniques and response strategies. <p>
-      </div>
-    
-      <div class="experience-item">
-        <h3>SIEM Engineer Trainee</h3>
-        <span><a href="https://www.vairavtech.com" target="_blank">Vairav Tech</a> | Dec 2023 - Jan 2024</span>
-        <p>
-          ⚡ Integrated SIEM with security technologies like IDS/IPS, firewalls, and endpoint protection.<br>
-          ⚡ Created automation scripts for tasks such as system health checks, reducing manual overhead and error rates.<br>
-          ⚡ Defined, created, and maintained log parsing logic to efficiently analyze security events.<br>
-          ⚡ Created and maintained technical documentation around SIEM content and security configurations.<br>
-          </p>
-      </div>
+<section id="home" class="hero">
 
-            <div class="experience-item">
-        <h3>SIEM Engineer Intern</h3>
-        <span><a href="https://www.vairavtech.com" target="_blank">Vairav Tech</a> | Sep 2023 - Nov 2023</span>
-        <p>
-          ⚡ Gained hands-on exposure to SIEM tools, alert mechanisms, and log pipelines.<br>
-          ⚡ Assisted in setting up and maintaining SIEM environments.<br>
-          ⚡ Learned fundamental concepts of log parsing, correlation, and threat intelligence.
-      </div>
+    <div class="hero-content">
 
-      <div class="experience-item">
-        <h3>Instructor</h3>
-        <span><a href="https://www.asm.edu.np" target="_blank">Asian School of Management & Technology</a> | 2023 - 2024</span>
-        <p>
-          ⚡ Tutored  students in <b>Web Technology</b>
-          <br>⚡ Conducted <b>Linux and cybersecurity</b> bootcamps.
-        </p>
-      </div>
-    </div>
-  </section>
+        <div class="hero-text">
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">
-        <h3>Custom Shell</h3>
-        <img src="img/shell.jpg" alt="Custom Shell" class="project-img">
-        <p>A custom Linux shell built in C supporting commands, piping, and redirection.</p>
-        <a href="https://github.com/Nabin0727/system-programming/tree/master/different_ways_to_shell" target="_blank">View Code</a>
-      </div>
-      <div class="project-card">
-        <h3>HTTP Server</h3>
-        <img src="img/http.jpg" alt="Custom Shell" class="project-img">
-        <p>A simple HTTP server built in C to handle basic GET and POST requests.</p>
-        <a href="https://github.com/Nabin0727/webserver" target="_blank">View Code</a>
-      </div>
-      <div class="project-card">
-        <h3>File Integrity Monitor</h3>
-        <img src="img/file.jpg" alt="Custom Shell" class="project-img">
-        <p>A tool built in C to detect file system changes for security monitoring.</p>
-        <a href="https://github.com/Nabin0727/Final-FIM-Project" target="_blank">View Code</a>
-      </div>
-      <div class="project-card">
-        <h3>Fake News Detection using Naive Bayes</h3>
-        <img src="img/fake.jpg" alt="Custom Shell" class="project-img">
-        <p>A tool to detect fake news based on Naive Bayes Classifier.</p>
-        <a href="https://github.com/Nabin0727/fake-news-naive_bayes_algorithm" target="_blank">View Code</a>
-      </div>
-    </div>
-  </section>
+            <h1>Nabin Lopchan
+            <span class="name-nepali">नविन लोप्चन</span>
+            </h1>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-list">
-      <div class="skill-badge">C/C++Programming</div>
-      <div class="skill-badge">Python/Bash</div>
-      <div class="skill-badge">ELK Stack/Wazuh</div>
-      <div class="skill-badge">Linux Systems</div>
-      <div class="skill-badge">Cybersecurity</div>
-      <div class="skill-badge">Machine Learning</div>
-      <div class="skill-badge">Networking</div>
-    </div>
-  </section>
+            <p class="subtitle">
+                PhD Student in Computer & Information Sciences
+            </p>
 
-<!-- Blog Section -->
-<section id="blogs">
-  <h2>My Blogs</h2>
-  <div class="blogs-container">
+            <p class="affiliation">
+                Augusta University
+            </p>
 
-    <div class="blog-card">
-      <h3>Deploying ELK Inside Docker</h3>
-      <img src="img/elk.png" alt="Cybersecurity Blog" class="blog-img">
-      <p>Guide for deploying ELK stack inside docker.</p>
-      <a href="https://medium.com/@lopchannabeen138/deploying-elk-inside-docker-container-docker-compose-4a88682c7643" target="_blank">Read Blog</a>
+            <p class="hero-description">
+                My researcg areas includes programming languages, formal methods,
+                memory saftey, type checking and program verification
+                along with intersection of security.
+            </p>
+
+            <div class="hero-links">
+
+                <a href="#research">
+                    Research
+                </a>
+
+                <a href="#publications">
+                    Publications
+                </a>
+
+                <a href="cv.pdf" target="_blank">
+                    CV
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-container">
+
+            <img
+                src="img/photo.png"
+                alt="Nabin Lopchan"
+                class="profile-image"
+            >
+
+        </div>
+
     </div>
 
-    <div class="blog-card">
-      <h3>HTTP Server in C</h3>
-      <img src="img/http.jpg" alt="Linux Blog" class="blog-img">
-      <p>An in-depth guide for building HTTP server in C.</p>
-      <a href="https://medium.com/@lopchannabeen138/simple-http-server-in-c-an-in-depth-guide-2f159a11cda9" target="_blank">Read Blog</a>
+
+    <!-- Social links -->
+
+    <div class="social-links">
+
+        <a href="https://github.com/Nabin0727" target="_blank" aria-label="GitHub" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://scholar.google.com/" target="_blank" aria-label="Google Scholar">
+            <i class="fa-solid fa-graduation-cap"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/connect-with-nabin/" target="_blank" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="mailto:nlopchan@augusta.edu" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+        </a>
+
     </div>
 
-    <div class="blog-card">
-      <h3>Building Your Own Shell in C</h3>
-      <img src="img/shell.jpg" alt="Cybersecurity Blog" class="blog-img">
-      <p>Guide for building a custom shell in C.</p>
-      <a href="https://medium.com/@lopchannabeen138/build-your-own-shell-in-c-a-beginners-guide-bb8ca3111217" target="_blank">Read Blog</a>
-    </div>
-
-    <div class="blog-card">
-      <h3>Hands on Docker</h3>
-      <img src="img/docker.jpg" alt="Cybersecurity Blog" class="blog-img">
-      <p>Deploying first Docker Image</p>
-      <a href="https://medium.com/@lopchannabeen138/basic-insight-into-docker-running-first-image-into-docker-container-9189c507b29b" target="_blank">Read Blog</a>
-    </div>
-
-    <!-- Add more blog cards as needed -->
-
-  </div>
 </section>
 
 
-  <!-- GitHub Contribution Graph -->
-  <section>
-    <img src="https://github-readme-stats.vercel.app/api?username=Nabin0727&show_icons=true&theme=radical" alt="GitHub Stats"/>
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Nabin0727&theme=react-dark" alt="GitHub Graph"/>
-  </section>
+<!-- =========================
+     ABOUT
+========================= -->
 
-  <footer>
-    <p>&copy; 2025 Nabin Lopchan.</p>
-  </footer>
+<section id="about" class="section">
 
-  <!-- Typed.js -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script type="text/javascript">
-    var typed = new Typed('.typing', {
-      strings: ["Analytical", "Curious", "Meticulous"],
-      typeSpeed: 80,
-      backSpeed: 40,
-      loop: true
-    });
-</script>
-<!-- Smooth Scrolling-->
-<script>
-  const navLinks = document.querySelectorAll('nav ul li a');
-  const navHeight = document.querySelector('nav').offsetHeight;
+    <div class="section-title">
+        <h2>About</h2>
+    </div>
 
-  navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href').substring(1);
-      const targetSection = document.getElementById(targetId);
-      const targetPosition = targetSection.offsetTop - navHeight - 20; // 20px extra space
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-      });
-    });
-  });
-</script>
-<script>
-  const goTopBtn = document.getElementById("goTopBtn");
+    <div class="section-content">
 
-  // Show button after scrolling 150px
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 150) {
-      goTopBtn.classList.add("show");
-    } else {
-      goTopBtn.classList.remove("show");
-    }
-  });
+        <p>
+            I am a <b>PhD</b> student in Computer & Information Sciences at
+            <b>Augusta University</b>. My research are centered
+            around programming languages, formal methods, memory
+            saftey, type checking and program verification.
+        </p>
 
-  // Scroll smoothly to top when clicked
-  goTopBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-</script>
+        <p>
+            My work focuses on developing techniques and tools that
+            improve the correctness, reliability, verification and security of
+            software systems/program.
+        </p>
+
+        <p>
+            Before starting my PhD, I worked in cybersecurity for 
+            more than 3 years. I worked as a <b>Solutions Engineer</b>
+            with experience in troubleshooting, debugging in customer support
+            operations.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RESEARCH
+========================= -->
+
+<section id="research" class="section">
+
+    <div class="section-title">
+        <h2>Research</h2>
+    </div>
+
+    <div class="section-content">
+
+        <p>
+            My research interests lie at the intersection of
+            programming language, formal verification, memory saftey and security.
+        </p>
+
+
+        <div class="research-list">
+
+            <article class="research-item">
+
+                <h3>Program Verification</h3>
+
+                <p>
+                    Techniques for formally proving that programs
+                    satisfy desired properties and specifications.
+                </p>
+
+            </article>
+
+
+            <article class="research-item">
+
+                <h3>Programming Languages</h3>
+
+                <p>
+                    Programming language design, semantics, type
+                    systems, and tools for reasoning about programs.
+                </p>
+
+            </article>
+
+
+            <article class="research-item">
+
+                <h3>Software Engineering</h3>
+
+                <p>
+                    Methods and tools for improving software
+                    reliability, maintainability, and correctness.
+                </p>
+
+            </article>
+
+
+            <article class="research-item">
+
+                <h3>Memory Safety & Security</h3>
+
+                <p>
+                    Techniques for detecting and preventing
+                    memory-related vulnerabilities in software.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PUBLICATIONS
+========================= -->
+
+<section id="publications" class="section">
+
+    <div class="section-title">
+        <h2>Publications</h2>
+    </div>
+
+
+    <div class="section-content">
+
+        <article class="publication">
+
+            <div class="publication-year">
+                2026
+            </div>
+
+            <div>
+
+                <h3>
+                    Title of Your Research Paper
+                </h3>
+
+                <p class="authors">
+                    Nabin Lopchan
+                </p>
+
+                <p class="venue">
+                    Conference / Journal Name
+                </p>
+
+                <div class="publication-links">
+                    <a href="#">Paper</a>
+                    <a href="#">Code</a>
+                    <a href="#">BibTeX</a>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="publication">
+
+            <div class="publication-year">
+                2025
+            </div>
+
+            <div>
+
+                <h3>
+                    Another Research Paper
+                </h3>
+
+                <p class="authors">
+                    Nabin Lopchan
+                </p>
+
+                <p class="venue">
+                    Journal / Conference
+                </p>
+
+                <div class="publication-links">
+                    <a href="#">Paper</a>
+                    <a href="#">Code</a>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     TEACHING/EXPERIENCE
+========================= -->
+
+<section id="teaching" class="section">
+
+    <div class="section-title">
+        <h2>Experience</h2>
+    </div>
+
+    <div class="section-content">
+
+        <div class="teaching-item">
+
+            <div class="teaching-year">
+                2026 - Now
+            </div>
+
+            <div>
+
+                <h3>Graduate Research Assistant</h3>
+
+                <p>
+                    Augusta University
+                </p>
+
+                <p>
+                    Researching in the fields of programming languages, formal methods,
+                    memory saftey, type checking and program verification
+                    along with intersection of security.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="teaching-item">
+
+            <div class="teaching-year">
+                2025 - 2026
+            </div>
+
+            <div>
+
+                <h3>Solutions Engineer</h3>
+
+                <p>
+                    guardsix inc
+                </p>
+
+                <p>
+                    I worked troubleshooting, debugging, onboarding and helping customer 
+                    secure their infrastructure from active threats.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     NEWS
+========================= -->
+
+<section id="news" class="section">
+
+    <div class="section-title">
+        <h2>News</h2>
+    </div>
+
+    <div class="section-content news-list">
+
+        <div class="news-item">
+
+            <span class="news-date">
+                Aug 2026
+            </span>
+
+            <p>
+                Started my PhD in Computer & Information Sciences
+                at Augusta University.
+            </p>
+
+        </div>
+
+
+        <div class="news-item">
+
+            <span class="news-date">
+                Mar 2025
+            </span>
+
+            <p>
+                Joined the Logpoint (now guardsix) in customer support and operations.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CV
+========================= -->
+
+<section id="cv" class="section">
+
+    <div class="section-title">
+        <h2>Curriculum Vitae</h2>
+    </div>
+
+    <div class="section-content cv-section">
+
+        <p>
+            For a complete overview of my academic background,
+            research experience, publications, and education,
+            please see my CV.
+        </p>
+
+        <a
+            href="cv.pdf"
+            target="_blank"
+            class="cv-button"
+        >
+            <i class="fa-regular fa-file-pdf"></i>
+            View CV
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact" class="section contact-section">
+
+    <div class="section-title">
+        <h2>Contact</h2>
+    </div>
+
+    <div class="section-content">
+
+        <p>
+            I am always interested in discussing research,
+            collaboration, and ideas related to programming language,
+            formal methods, memory saftey, secuiry, software verification and more.
+        </p>
+
+
+        <div class="contact-details">
+
+            <p>
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:your.email@augusta.edu">
+                    nlopchan@augusta.edu
+                </a>
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Augusta, Georgia, USA
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <p>
+        © <span id="current-year"></span> Nabin Lopchan
+    </p>
+
+    <p>
+        PhD Student · Augusta University
+    </p>
+
+</footer>
+
+
+<script src="script/script.js"></script>
+
 </body>
 </html>
-
